@@ -12,7 +12,7 @@ class AgeStats extends Component {
     let months = Math.floor(days / 31);
     days -= months * 31;
 
-    return `${years} years, ${months} months, and ${days} days`;
+    return `${years} years, ${months} months, and ${days} day(s)`;
   }
 
   render() {
