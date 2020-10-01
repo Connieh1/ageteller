@@ -30,7 +30,9 @@ class App extends Component {
           ></FormControl>{" "}
           <Button onClick={() => this.changeBirthday()}>Submit</Button>
           {this.state.showStats ? (
-            <AgeStats date={this.state.birthday} />
+            <div className="fade age-stats">
+              <AgeStats date={this.state.birthday} />
+            </div>
           ) : (
             <div></div>
           )}
